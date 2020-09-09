@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SeatAllocationActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/select_semester"
+                style="@style/spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/select_date"
+                style="@style/edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Select Exam Date"
+                android:textSize="17dp" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="10dp">
+
+            <GridView
+                android:id="@+id/firstRow"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:numColumns="1"
+                android:padding="3dp"
+                android:verticalSpacing="5dp" />
+
+            <GridView
+                android:id="@+id/secondRow"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:numColumns="1"
+                android:padding="3dp"
+                android:verticalSpacing="5dp" />
+
+            <GridView
+                android:id="@+id/thirdRow"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:numColumns="1"
+                android:padding="3dp"
+                android:verticalSpacing="5dp" />
+
+            <GridView
+                android:id="@+id/forthRow"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:numColumns="1"
+                android:padding="3dp"
+                android:verticalSpacing="5dp" />
+
+            <GridView
+                android:id="@+id/fifthRow"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:numColumns="1"
+                android:padding="3dp"
+                android:verticalSpacing="5dp" />
+        </TableRow>
+    </TableLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

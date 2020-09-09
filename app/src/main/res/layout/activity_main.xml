@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/header" />
+        </TableRow>
+
+        <TableRow>
+
+            <TableLayout android:padding="10dp">
+
+                <TableRow
+                    android:layout_width="349dp"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/admin"
+                        style="@style/button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:layout_weight="1"
+                        android:text="Admin" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/student"
+                        style="@style/button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="1"
+                        android:text="Student" />
+                </TableRow>
+            </TableLayout>
+
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
